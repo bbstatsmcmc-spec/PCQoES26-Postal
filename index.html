@@ -117,7 +117,7 @@ const Q=[
 {id:"Q29.1",ty:"s",sh:()=>A.Q29==5,t:"You are currently studying in…|Adakah anda sedang belajar di ...",o:"College/University|Kolej/Universiti;Secondary school|Sekolah menengah;Others|Lain-lain"},
 {id:"Q30",ty:"s",t:"What is your highest level of education?|Apakah tahap tertinggi pendidikan anda?",o:"Degree or higher|Ijazah dan ke atas;Diploma;STPM/STAM/Certificate/UEC-Senior Middle Three;SPM/SPVM;Sijil 4 Thanawi/SMA;PMR/UEC-Junior Middle Three;Secondary school|Sekolah menengah;Primary school|Sekolah rendah;Others|Lain-lain;None|Tiada"},
 {id:"Q31",ty:"s",t:"Please state your nationality.|Sila nyatakan kewarganegaraan anda.",o:"Malaysian|Warganegara Malaysia;Non-Malaysian, please specify|Bukan warganegara Malaysia, sila nyatakan*"},
-{id:"Q32",ty:"s",t:"Please state your ethnicity.|Sila nyatakan bangsa anda.",o:"Malay|Melayu;Chinese|Cina;Indian|India;Bumiputra Sabah/Sarawak;Orang asli;Others|Lain-lain"},
+{id:"Q32",ty:"s",sh:()=>A.Q31!=2,t:"Please state your ethnicity.|Sila nyatakan bangsa anda.",o:"Malay|Melayu;Chinese|Cina;Indian|India;Bumiputra Sabah/Sarawak;Orang asli;Others|Lain-lain"},
 {id:"Q33",ty:"s",t:"Which monthly household income category do you fall into?|Berapakah kategori pendapatan isi rumah bulanan anda?",o:"More than RM16,520|Lebih RM16,520;RM12,680 – RM16,519;RM10,280 – RM12,679;RM8,600 – RM10,279;RM7,020 – RM8,599;RM5,860 – RM7,019;RM4,840 – RM5,859;RM3,810 – RM4,839;RM2,890 – RM3,809;Less than RM2,890|Kurang RM2,890"}
 ];
 const Q3O=Q.find(q=>q.id=="Q3").o.split(";").map(s=>s.split("|"));
